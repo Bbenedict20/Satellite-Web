@@ -1,108 +1,182 @@
 ---
-title: "About | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "About | Satellite Web Agency"
+description: "About"
 permalink: "/about/"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
+<link rel="preload" as="image"
+    href="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 600 }) | avif %}" />
+<link rel="preload" as="image"
+    href="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 482, height: 536 }) | avif %}" />
+
+<link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
-            </div>
+<div id="banner-310">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/about/" class="cs-link cs-active">About Us</a>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 400 }) | avif %}"
+            type="image/avif">
+        <source media="(max-width: 600px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 400 }) | webp %}"
+            type="image/webp">
+        <source media="(max-width: 600px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 400 }) | jpeg %}"
+            type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2048, height: 642 }) | avif %}"
+            type="image/avif">
+        <source media="(max-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2048, height: 642 }) | webp %}"
+            type="image/webp">
+        <source media="(max-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2048, height: 642 }) | jpeg %}"
+            type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | avif %}"
+            type="image/avif">
+        <source media="(min-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | webp %}"
+            type="image/webp">
+        <source media="(min-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}"
+            type="image/jpeg">
+        <img src="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library"
+            width="1920" height="482" loading="eager" decoding="async">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RPsbs-313">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 482, height: 536 }) | avif %}"
+                    type="image/avif">
+                <source media="(max-width: 600px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 482, height: 536 }) | webp %}"
+                    type="image/webp">
+                <source media="(max-width: 600px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 482, height: 536 }) | jpeg %}"
+                    type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 802, height: 892 }) | avif %}"
+                    type="image/avif">
+                <source media="(max-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 802, height: 892 }) | webp %}"
+                    type="image/webp">
+                <source media="(max-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 802, height: 892 }) | jpeg %}"
+                    type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 1044, height: 1162 }) | avif %}"
+                    type="image/avif">
+                <source media="(min-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 1044, height: 1162 }) | webp %}"
+                    type="image/webp">
+                <source media="(min-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}"
+                    type="image/jpeg">
+                <img src="{% getUrl "/assets/images/Code_BG.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}"
+                    alt="lawyers" width="522" height="581" decoding="async">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 366, height: 354 }) | avif %}"
+                    type="image/avif">
+                <source media="(max-width: 600px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 366, height: 354 }) | webp %}"
+                    type="image/webp">
+                <source media="(max-width: 600px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 366, height: 354 }) | jpeg %}"
+                    type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 600, height: 578 }) | avif %}"
+                    type="image/avif">
+                <source media="(max-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 600, height: 578 }) | webp %}"
+                    type="image/webp">
+                <source media="(max-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 600, height: 578 }) | jpeg %}"
+                    type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 780, height: 752 }) | avif %}"
+                    type="image/avif">
+                <source media="(min-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 780, height: 752 }) | webp %}"
+                    type="image/webp">
+                <source media="(min-width: 1024px)"
+                    srcset="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 780, height: 752 }) | jpeg %}"
+                    type="image/jpeg">
+                <img src="{% getUrl "/assets/images/ME_BG.JPG" | resize({ width: 780, height: 752 }) | jpeg %}"
+                    alt="gavel" width="390" height="376" loading="lazy" decoding="async">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <h2 class="cs-title">About Satellite Web Design</h2>
+            <p class="cs-text">
+                My love for coding started around 12, developing platform computer games to play in the basement with my
+                brother. Simple games led
+                to editing Java code on Runescape private servers to create our own custom worlds.
+                Something about coding really
+                pulled me in. My mom spent her career designing websites which is how I got my start developing.
+                She showed me the basics of HTML & CSS, I taught myself some Javascript, and off I went. Owning a
+                business was always
+                in the back of my mind, so finally I thought, why not combine the two?
+            </p>
+            <p class="cs-text">
+                My goal with Satellite Web Design
+                is to help
+                small business owners have a better web presence without spending hours of time messing around with
+                page builders or AI. All without breaking the bank. I create simple, effective websites that load in
+                under
+                1
+                second, help you rank higher, and
+                will ultimately help you grow your business. This is done by hand writing all of our code with
+                ZERO bloat to slow things down.
+                Our websites score perfect marks on Google Page Insights and are impossible to hack. <strong>Did you
+                    know that if your website
+                    takes more than 3 seconds to load, you could lose up to 50% of your traffic?
+                </strong>
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get started Today!</a>
+        </div>
+
     </div>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+</section>
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About CodeStitch</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/contact/" class="cs-button-solid">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    {% include 'sections/cta.html' %}
 
 {% endblock %}

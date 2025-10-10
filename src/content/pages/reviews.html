@@ -1,192 +1,589 @@
 ---
-title: "Reviews | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "FAQ | Satellite Web Agency"
+description: "Frequently Asked Questions"
 permalink: "/reviews/"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/reviews.css">
+<link rel="preload" as="image"
+    href="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 600 }) | avif %}" />
+<link rel="stylesheet" href="/assets/css/FAQ.css">
+
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">Reviews</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/reviews/" class="cs-link cs-active">Reviews</a>
-            </div>
+<div id="banner-310">
+    <div class="cs-container">
+        <span class="cs-int-title">FAQ</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/reviews/" class="cs-link cs-active">FAQ</a>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
     </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 600 }) | avif %}"
+            type="image/avif">
+        <source media="(max-width: 600px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 600 }) | webp %}"
+            type="image/webp">
+        <source media="(max-width: 600px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 640, height: 600 }) | jpeg %}"
+            type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2048, height: 942 }) | avif %}"
+            type="image/avif">
+        <source media="(max-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2048, height: 942 }) | webp %}"
+            type="image/webp">
+        <source media="(max-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}"
+            type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | avif %}"
+            type="image/avif">
+        <source media="(min-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | webp %}"
+            type="image/webp">
+        <source media="(min-width: 1024px)"
+            srcset="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}"
+            type="image/jpeg">
+        <img src="{% getUrl "/assets/images/Hero_3.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library"
+            width="1920" height="482" loading="eager" decoding="async">
+    </picture>
+</div>
 
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
 
-    <section id="reviews-67">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Reviews</span>
-                <h2 class="cs-title">Words From Our Customers</h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 3 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 3 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 3 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-            </ul>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+<section id="faq-1720">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Frequently Asked Questions</h2>
         </div>
-    </section>
+        <div class="cs-flex-group">
+            <div class="cs-button-group">
 
-    {% include 'sections/cta.html' %}
+            </div>
+            <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+            <div class="cs-wrapper">
+                <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+                <ul class="cs-faq-group" data-category="one">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What happens after my contract expires?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            You will be switched to month-to-month payments and are free to cancel at any time!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What happens to my website if I cancel services?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Your website will be taken down along with all content.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What if I miss a payment?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            There is a 7 day grace period for late payments. Afterwards your contract will be canceled
+                            and you will be charged the remainding amount.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the difference between a traditional IRA and a Roth IRA?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="two">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the best way to start investing?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the tax implications of investing in the stock market?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the difference between a traditional IRA and a Roth IRA?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="three">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the best way to start investing?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the tax implications of investing in the stock market?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the difference between a traditional IRA and a Roth IRA?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="four">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the best way to start investing?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the tax implications of investing in the stock market?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the difference between a traditional IRA and a Roth IRA?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="five">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the best way to start investing?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides
+                            legal services such as giving legal advice, writing legal documents and providing policy
+                            counsel to governments. An attorney, on top of these things also holds a state or regional
+                            license to represent clients in a law court.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the tax implications of investing in the stock market?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the difference between a traditional IRA and a Roth IRA?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum
+                            pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim
+                            ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/assets/js/faq.js"> </script>
 
 {% endblock %}
